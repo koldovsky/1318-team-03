@@ -1,5 +1,13 @@
+.articles-section .articles__title {
+    color: #050e73;
+}
+
+.articles-section .articles__description {
+    color: #050e73;
+}
+
 .articles-section h2 {
-    color:#050e74;
+    color:#050e73;
 }
 
 .articles-section .article__meta {
