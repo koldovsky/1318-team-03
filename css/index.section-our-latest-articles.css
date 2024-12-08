@@ -4,28 +4,38 @@
   color: #050e73;
   font-size: 38px;
   font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .articles-section .articles__description {
   color: #050e73;
   font-size: 19px;
   font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .articles-section .article__title {
   color: #050e73;
   font-size: 24px;
   font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 .articles-section .article__meta {
   color: #ff5b2d;
   font-size: 12px;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
 }
 
 .articles-section .article__text {
   color: #6a6e8f;
   font-size: 17px;
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
