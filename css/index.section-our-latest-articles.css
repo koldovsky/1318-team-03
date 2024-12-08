@@ -1,19 +1,31 @@
+@import "global.css";
+
 .articles-section .articles__title {
     color: #050e73;
+    font-size: 38px;
+    font-family: 'Rubik', sans-serif;
 }
 
 .articles-section .articles__description {
     color: #050e73;
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
 }
 
-.articles-section h2 {
+.articles-section .article__title {
     color:#050e73;
+    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
 }
 
 .articles-section .article__meta {
     color: #ff5b2d;
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .articles-section .article__text {
     color: #6a6e8f;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
 }
