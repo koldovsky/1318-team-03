@@ -1,7 +1,13 @@
 @import "global.css";
 
+:root {
+  --primary-color: #050e73;
+  --accent-color: #ff5b2d;
+  --secondary-color: #6a6e8f;
+}
+
 .articles-section .articles__title {
-  color: #050e73;
+  color: var(--primary-color);
   font-size: 38px;
   font-family: "Rubik", sans-serif;
   font-weight: 700;
@@ -9,7 +15,7 @@
 }
 
 .articles-section .articles__description {
-  color: #050e73;
+  color: var(--primary-color);
   font-size: 19px;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -17,7 +23,7 @@
 }
 
 .articles-section .article__title {
-  color: #050e73;
+  color: var(--primary-color);
   font-size: 24px;
   font-family: "Rubik", sans-serif;
   font-weight: 700;
@@ -25,7 +31,7 @@
 }
 
 .articles-section .article__meta {
-  color: #ff5b2d;
+  color: var(--accent-color);
   font-size: 12px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
@@ -33,7 +39,7 @@
 }
 
 .articles-section .article__text {
-  color: #6a6e8f;
+  color: var(--secondary-color);
   font-size: 17px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
