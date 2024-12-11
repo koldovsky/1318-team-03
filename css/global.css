@@ -3,6 +3,11 @@
 
 :root {
     --background-color: #FFF6ED;
+    --primary-color: #050e73;
+    --title-color: #040f73;
+    --text-accent-color: #424875;
+    --accent-color: #ff5b2d;
+    --secondary-color: #6a6e8f;
   }
 
 body{
