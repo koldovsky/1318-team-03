@@ -1,45 +1,100 @@
 :root {
   --primary-color: #050e73;
+  --title-color: #040f73;
+  --text-accent-color: #424875;
   --accent-color: #ff5b2d;
   --secondary-color: #6a6e8f;
 }
 
-.articles-section .articles__title {
-  color: var(--primary-color);
-  font-size: 38px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+.clients {
+  & .clients__wrapper {
+    padding: 50px 0 60px;
+  }
+  & .clients__title {
+    color: var(--title-color);
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
 
-.articles-section .articles__description {
-  color: var(--primary-color);
-  font-size: 19px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: normal;
-}
+    @media (min-width: 1000px){
+      font-size: 42px;
+      line-height: 54px;
+    }
+  }
+  & .clients__description {
+    color: var(--text-accent-color);
+    font-size: 19px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    margin-top: 10px;
+  }
+  & .clients__cards {
+    margin-top: 40px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(1, 90%);
+    justify-content: center;
 
-.articles-section .article__title {
-  color: var(--primary-color);
-  font-size: 24px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  font-style: normal;
-}
+    @media (min-width: 480px){
+      grid-template-columns: repeat(2, 40%);
+    }
+    @media (min-width: 1000px){
+      grid-template-columns: repeat(3, 30%);
+    }
+  }
+  & .clients__card {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
 
-.articles-section .article__meta {
-  color: var(--accent-color);
-  font-size: 12px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-style: normal;
-}
+    @media (min-width: 768px){
+      border-radius: 35px;
+    }
+  }
+  & .clients__card-img {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
 
-.articles-section .article__text {
-  color: var(--secondary-color);
-  font-size: 17px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+    & img {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  & .clients__card-name {
+    color: var(--title-color);
+    font-family: "Rubik", sans-serif;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-top: 15px;
+  }
+  & .clients__card-info {
+    color: var(--secondary-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+    margin-top: 15px;
+    position: relative;
+  }
+  & .clients__card-line{
+    margin: 15px auto 0;
+    width: 33px;
+    height: 2px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+  }
+  & .clients__card-date{
+    margin-top: 15px;
+    color: var(--accent-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    line-height: 17px;
+    font-weight: 400;
+  }
 }
