@@ -1,0 +1,12 @@
+@import "global.css";
+
+root {
+  --primary-color: #050e73;
+  --accent-color: #ff5b2d;
+  --secondary-color: #6a6e8f;
+  --background-image-color1: #fabf3e;
+}
+
+svg {
+  background-color: var(--background-image-color1);
+}
