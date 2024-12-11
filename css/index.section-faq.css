@@ -1,0 +1,12 @@
+.faq-title {
+  color: var(--title-color);
+  text-align: left;
+  font-size: 42px;
+  line-height: 1.3;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700
+}
+
+.faq__description {
+  color: var(--text-accent-color);
+}
