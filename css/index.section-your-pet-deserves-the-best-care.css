@@ -1,11 +1,3 @@
-@import "global.css";
-
-:root {
-  --primary-color: #050e73;
-  --accent-color: #ff5b2d;
-  --secondary-color: #6a6e8f;
-}
-
 .best-care {
   background-image: url("/img/background/your-pet-deserve-background.png");
   min-height: 775px;
@@ -56,9 +48,33 @@
       color: var(--primary-color);
       font-weight: 700;
 
+      &:hover {
+        text-decoration: underline;
+      }
+
       .best-care__call-us__phone {
         padding: 20px;
       }
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .best-care {
+    height: 557px;
+  }
+  .best-care__text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+
+    .best-care__title {
+      width: 330px;
+      font-size: 40px;
+    }
+
+    .best-care__discription {
+      margin-top: 20px;
     }
   }
 }

@@ -10,6 +10,7 @@
 }
 
 :root {
+  scroll-behavior: smooth;
   --background-color: #fff6ed;
   --primary-color: #050e73;
   --title-color: #040f73;
