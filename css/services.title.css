@@ -1,9 +1,9 @@
-title__main-text {
+.title__main-text {
     color: var(--title-color);
     font-family: "Rubik", sans-serif;
 }
 
-title__description {
+.title__description {
     color: var(--text-accent-color);
     font-family: "Poppins", sans-serif;
 }
