@@ -18,6 +18,10 @@
   --accent-color: #ff5b2d;
   --secondary-color: #6a6e8f;
   --button-text-color: #ffffff;
+  --button-hover-color:#ec673f;
+  --border-radius: 12px;
+  --container-width: 1200px;
+  --button-border-radius: 50px;
 }
 
 body {
@@ -30,6 +34,7 @@ img {
 }
 
 .container {
-  max-width: 1200px;
-  margin: auto;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1rem;
 }
