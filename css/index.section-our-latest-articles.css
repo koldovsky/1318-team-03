@@ -99,7 +99,7 @@
   }
 
   .articles__list {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 
   .article__button {
