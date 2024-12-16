@@ -1,8 +1,9 @@
-.best-care {
-  background-image: url("/img/background/your-pet-deserve-background.png");
-  min-height: 775px;
-}
 
+
+.best-care {
+  display: flex;
+  flex-direction: row-reverse;
+}
 .best-care__text {
   display: flex;
   flex-direction: column;
