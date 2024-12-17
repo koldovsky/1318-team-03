@@ -78,3 +78,29 @@
     </div>
   </div>
 </section>
+<script>
+  // Get all accordion buttons
+  const accordionButtons = document.querySelectorAll(".accordion__button");
+
+  accordionButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      // Toggle the active state for the clicked button
+      const isActive = button.classList.contains("active");
+      const panel = button.nextElementSibling;
+
+      // Collapse all other active accordion buttons
+      document
+        .querySelectorAll(".accordion__button.active")
+        .forEach((activeButton) => {
+          if (activeButton !== button) {
+            activeButton.classList.remove("active");
+            activeButton.nextElementSibling.style.maxHeight = null;
+          }
+        });
+
+      // Toggle the clicked button
+      button.classList.toggle("active", !isActive);
+      panel.style.maxHeight = isActive ? null : `${panel.scrollHeight}px`;
+    });
+  });
+</script>
