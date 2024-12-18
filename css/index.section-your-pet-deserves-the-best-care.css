@@ -7,17 +7,6 @@
   
 }
 
-.best-care__image {
-  align-self: center;
-
-  
-}
-
-@media (max-width: 1024px) {
-  .best-care__image {
-visibility: hidden;  }
-}
-
 .best-care__text {
   display: flex;
   flex-direction: column;
