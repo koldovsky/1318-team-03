@@ -1,0 +1,27 @@
+@import "global.css";
+@import "services.title.css";
+
+.service__price{
+    color: var(--accent-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.service__name{
+    color: var(--title-color);
+    font-family: "Rubik", sans-serif;
+}
+
+.service__description{
+    color: var(--secondary-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.service__feature-text{
+    color: var(--text-accent-color);
+    font-family: "Poppins", sans-serif;
+}
+
+.service__button{
+    color: var(--button-text-color);
+    font-family: "Poppins", sans-serif;
+}
