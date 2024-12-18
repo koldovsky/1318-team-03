@@ -1,12 +1,12 @@
 
 .pets-happy-and-healthy-img {
-    width: 350px;
-    height: 500px;
+    width: 100px;
+    height: 150px;
     margin: 0 auto;
 
     & img {
-      width: 350px;
-      height: 500px;
+      width: 100px;
+      height: 150px;
     }
 }       
 .pets-happy-and-healthy__text {
