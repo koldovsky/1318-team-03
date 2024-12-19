@@ -7,6 +7,10 @@
   
 }
 
+.best-care__image {
+  align-self: center;
+}
+
 .best-care__text {
   display: flex;
   flex-direction: column;
@@ -65,7 +69,12 @@
   }
 }
 
+@media (max-width: 1024px) {
+  .best-care__photo {
+    visibility: hidden;
 
+  }
+}
 @media (max-width: 640px) {
   .best-care {
     height: 557px;

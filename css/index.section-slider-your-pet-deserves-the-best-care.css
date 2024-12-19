@@ -1,4 +1,4 @@
-.slider__best-care {
+ .slider__best-care {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -32,6 +32,41 @@
 	border-top: 2px solid var(--accent-color);
 }
 
-.best-care__info {
-  
+.slider-card__info {
+  padding-top: 15px;
+  padding-left: 25px;
+}
+
+.slider-card__discription {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 17px;
+  color: var(--secondary-color);
+}
+
+.slider-card__link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 17px;
+  padding-top: 32px;
+}
+
+.slider-card__link a {
+  color: var(--title-color);
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.slider-card__link svg {
+  position: relative;
+  top: 8px;
+  left: 5px;
+}
+
+.slider__best-care button {
+  border: none;
+  text-decoration: none;
+  background-color: none;
+  height: 30px;
+  align-self: center;
 }
