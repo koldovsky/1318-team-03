@@ -1,58 +1,37 @@
 .slider__best-care {
-  padding: 0px 24px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 60px 0px;
+  
 }
 
-.best-care__slider {
-  background-color: #fff;
-
-  padding: 0px 15px;
-}
-
-.best-care__slider-card1 {
-  padding-left: 10px;
+.best-care__card {
+  height: 320px;
+  width: 260px;
+  background-color: var(--button-text-color);
+  border-radius: 20px;
+  overflow: hidden;
+  margin: 15px;
 }
 
 .best-care__img {
-  width: 50px;
+  padding-left: 25px;
+  padding-top: 30px;
 }
 
 .slider-card__title {
-  font-family: "Rubik", sans-serif;
-  font-size: 22px;
+  font-family: 'Rubik', sans-serif;
   color: var(--title-color);
+  padding: 20px 0px;
 }
 
 .best-care__hr {
-  margin: 20px 0 20px 0;
-  width: 50px;
-  border: 2px solid var(--accent-color);
-  border-radius: 5px;
+	border: none;
+  width: 40px;
+	border-top: 2px solid var(--accent-color);
 }
 
-.slider-card__info {
-  display: flex;
-  flex-direction: column;
-}
-
-.slider-card__discription {
-  font-family: "Poppins", sans-serif;
-  color: var(--secondary-color);
-  font-size: 17px;
-  font-weight: 500;
-  height: 50px;
-}
-
-.slider-card__link {
-  text-decoration: none;
-  font-family: "Poppins", sans-serif;
-  font-size: 13px;
-  font-weight: 700;
-  color: var(--title-color);
-  padding-top: 20px;
-}
-
-.best-care__vector {
-  position: relative;
-  top: 7px;
-  left: 10px;
+.best-care__info {
+  
 }
