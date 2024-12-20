@@ -8,8 +8,6 @@ const stringToArray = (string) => string.split(" ");
 
 const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
 
-console.log(DNAtoRNA("GCAT"));
-
 //=======Find Maximum and Minimum Values of a List=======================
 //https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 
