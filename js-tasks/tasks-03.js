@@ -1,22 +1,11 @@
-//============Geometry Basics: Circle Circumference in 2D========================
+//============Geometry Basics: Circle Circumference in 2D================
 //https://www.codewars.com/kata/58e43389acfd3e81d5000a88/train/javascript
-
-/* class Point {
-    constructor(x, y) {
-      this.x = x;
-      this.y = y;
-    }
-  }
-  
-  class Circle {
-    constructor(center, radius) {
-      this.center = center;
-      this.radius = radius;
-    }
-  } */
 
 const circleCircumference = (circle) =>
   parseFloat((2 * Math.PI * circle.radius).toFixed(6));
+
+//====Training JS #12: loop statement --for..in and for..of==============
+//https://www.codewars.com/kata/5722b3f0bd5583cf44001000/train/javascript
 
 function giveMeFive(obj) {
   const result = [];
@@ -26,4 +15,37 @@ function giveMeFive(obj) {
     if (obj[key].length == 5) result.push(obj[key]);
   }
   return result;
+}
+
+//======================Understanding closures - the basics==============
+//https://www.codewars.com/kata/56b71b1dbd06e6d88100092a/train/javascript
+
+const buildFun = (n) => Array.from({ length: n }, (_, i) => () => i);
+
+//====Fun with ES6 Classes #2 - Animals and Inheritance==================
+//https://www.codewars.com/kata/56f935002e6c0d55fa000d92/train/javascript
+
+class Shark extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 0, "shark", status);
+  }
+}
+
+class Cat extends Animal {
+  constructor(name, age, status) {
+    super(name, age, 4, "cat", status);
+  }
+  introduce() {
+    return `${super.introduce()}  Meow meow!`;
+  }
+}
+
+class Dog extends Animal {
+  constructor(name, age, status, master) {
+    super(name, age, 4, "dog", status);
+    this.master = master;
+  }
+  greetMaster() {
+    return `Hello ${this.master}`;
+  }
 }
