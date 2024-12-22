@@ -6,7 +6,8 @@ const stringToArray = (string) => string.split(" ");
 //============================DNA to RNA Conversion=======================
 //https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
-const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
+const DNAtoRNA = (dna) => dna.replaceAll("T", "U");
+//const DNAtoRNA = (dna) => dna.replace(/T/g, "U");
 
 //=======Find Maximum and Minimum Values of a List=======================
 //https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
@@ -44,7 +45,7 @@ const getRealFloor = (n) => (n > 0 ? (n >= 13 ? n - 2 : n - 1) : n);
 //==================Clock==========================================
 //https://www.codewars.com/kata/55f9bca8ecaa9eac7100004a/train/javascript
 
-const past = (h, m, s) => (h * 3600 + m * 60 + s) * 1000;
+const past = (hours, minutes, seconds) => (hours * 3600 + minutes * 60 + seconds) * 1000;
 
 //==================Is n divisible by x and y?===========================
 //https://www.codewars.com/kata/5545f109004975ea66000086/train/javascript
