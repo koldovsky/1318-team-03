@@ -1,20 +1,18 @@
 //============Geometry Basics: Circle Circumference in 2D================
 //https://www.codewars.com/kata/58e43389acfd3e81d5000a88/train/javascript
 
-const circleCircumference = (circle) =>
-  parseFloat((2 * Math.PI * circle.radius).toFixed(6));
+const circleCircumference = (circle) => 2 * Math.PI * circle.radius;
 
 //====Training JS #12: loop statement --for..in and for..of==============
 //https://www.codewars.com/kata/5722b3f0bd5583cf44001000/train/javascript
 
 function giveMeFive(obj) {
-  const result = [];
-
-  for (let key in obj) {
-    if (key.length == 5) result.push(key);
-    if (obj[key].length == 5) result.push(obj[key]);
+  const fives = [];
+  for (const key in obj) {
+    if (key.length ==- 5) fives.push(key);
+    if (obj[key].length === 5) fives.push(obj[key]);
   }
-  return result;
+  return fives;
 }
 
 //======================Understanding closures - the basics==============
