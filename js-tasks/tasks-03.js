@@ -9,7 +9,7 @@ const circleCircumference = (circle) => 2 * Math.PI * circle.radius;
 function giveMeFive(obj) {
   const fives = [];
   for (const key in obj) {
-    if (key.length ==- 5) fives.push(key);
+    if (key.length === 5) fives.push(key);
     if (obj[key].length === 5) fives.push(obj[key]);
   }
   return fives;
