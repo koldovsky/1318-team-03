@@ -94,7 +94,7 @@
     background-color: var(--button-hover-color);
   }
 
-  @media (max-width: 768px) {
+  /*@media (max-width: 768px) {
     .pets-happy-and-healthy {
         flex-direction: column;
         text-align: center;
@@ -107,4 +107,4 @@
         width: 90%;
         margin-left: 0;
     }
-}
+}*/
