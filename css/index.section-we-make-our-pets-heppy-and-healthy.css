@@ -58,9 +58,17 @@
   .pets-happy-and-healthy__description {
     font-size: 16px;
     line-height: 1.6;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+
+  .pets-happy-and-healthy__second.description {
+    font-size: 16px;
+    line-height: 1.6;
     color: var(--text-accent-color);
     margin-bottom: 20px;
   }
+  
   
   .slider__pets-happy-and-healthy__text {
     display: flex;
