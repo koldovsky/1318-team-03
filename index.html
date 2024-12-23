@@ -24,12 +24,20 @@
   </head>
 
   <body>
-    <header
-      data-hx-trigger="load"
-      data-hx-swap="outerHTML"
-      data-hx-get="global.header.partial.html"      
-    ></header>
+    <header class="header">
+      <div class="header__background">
+          <div class="header__container container">
+              <nav data-hx-trigger="load" data-hx-swap="outerHTML" data-hx-get="global.header.partial.html"></nav>
+          </div>
+      </div>
+  </header>
+    <script type="module" src="./js/index.js"></script>
     <main>
+      <section
+        data-hx-trigger="load"
+        data-hx-swap="outerHTML"
+        data-hx-get="index.section-slider-your-pet-deserves-the-best-care.html"
+      ></section>
       <section
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
@@ -74,11 +82,6 @@
         data-hx-trigger="load"
         data-hx-swap="outerHTML"
         data-hx-get="index.section-your-pet-deserves-the-best-care.html"
-      ></section>
-      <section
-        data-hx-trigger="load"
-        data-hx-swap="outerHTML"
-        data-hx-get="index.section-slider-your-pet-deserves-the-best-care.html"
       ></section>
     </main>
     <footer
