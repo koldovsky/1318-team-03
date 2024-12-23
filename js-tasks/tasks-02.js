@@ -3,7 +3,7 @@
 
 const stringToArray = (string) => string.split(" ");
 
-//============================DNA to RNA Conversion=======================
+//============================DNA to RNA Conversion======================
 //https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 
 const DNAtoRNA = (dna) => dna.replaceAll("T", "U");
