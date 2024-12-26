@@ -1,0 +1,45 @@
+.footer__container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .footer__column {
+    display: inline-block;
+    text-align: left;
+    width: 20%;
+     
+  }
+  .footer__link-item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .footer__links {
+    padding: 0;
+    
+  }
+  
+  .footer__link {
+    text-decoration: none;
+    font-family: "Rubik", sans-serif;
+    color: var(--secondary-color);
+    position: relative;
+    display: inline-block;
+  }
+  
+  .footer__logo {
+    justify-content: center;
+  }
+  
+  
+  .footer__h3-svg {
+  
+  
+  }
+  
+  .filled_Qbi {
+    width: 28px;
+    height: 28px;
+    fill: var(--button-hover-color);
+  }
