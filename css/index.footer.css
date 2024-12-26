@@ -1,7 +1,17 @@
-.footer__container {
+
+.footer {
+    padding: 0;
+    margin: 20px 0;
+    justify-content: space-between;
+  }
+  
+  .footer__container {
     display: flex;
     gap: 20px;
     justify-content: center;
+    font-family: "Rubik", sans-serif;
+    color: var(--secondary-color);
+    margin: 40px;
   }
   
   .footer__column {
@@ -10,6 +20,12 @@
     width: 20%;
      
   }
+  
+  .footer__column-title {
+    color: var(--primary-color);
+  }
+  
+  
   .footer__link-item {
     margin: 0;
     padding: 0;
@@ -19,6 +35,9 @@
     padding: 0;
     
   }
+  .footer__text {
+    margin-bottom: 10px;
+  }
   
   .footer__link {
     text-decoration: none;
@@ -26,16 +45,23 @@
     color: var(--secondary-color);
     position: relative;
     display: inline-block;
+    margin-bottom: 10px;
+  }
+  
+  .footer__general {
+    max-width: 240px;
   }
   
   .footer__logo {
     justify-content: center;
+    margin-bottom: 10px;
   }
   
   
-  .footer__h3-svg {
-  
-  
+  .rights {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 40px;
   }
   
   .filled_Qbi {
