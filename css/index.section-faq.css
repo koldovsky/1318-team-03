@@ -6,7 +6,7 @@
   .faq__content {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 0.9375rem; /* 15px */
+    gap: 2rem; /* 32px */
     padding: 3.125rem 2rem; /* 50px 32px */
 
     .faq__accordion {
