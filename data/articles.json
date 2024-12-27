@@ -1,0 +1,26 @@
+[
+  {
+    "image": "img/articles/dog.webp",
+    "meta": "Pet health | September 24, 2024",
+    "title": "Meal Options for Your Dog",
+    "text": "Proper nutrition is especially important for purebred dogs. Some dogs are in rather poor health, and you should maintain it with healthy food and vitamins.",
+    "buttonText": "Read More",
+    "class": "article--dog"
+  },
+  {
+    "image": "img/articles/rabbit.webp",
+    "meta": "Pet care | September 12, 2024",
+    "title": "How to Look After Rabbits",
+    "text": "Indoor rabbits are so soft and fluffy that every second family thinks about buying a rabbit! But these animals require special care, including a spacious cage.",
+    "buttonText": "Read More",
+    "class": "article--rabbit"
+  },
+  {
+    "image": "img/articles/cat.webp",
+    "meta": "Pet health | September 03, 2024",
+    "title": "Signs Your Cat is Stressed",
+    "text": "Everyone knows that cats can be very wayward animals. But sometimes they show their bad temper for special reasons, namely because they are stressed.",
+    "buttonText": "Read More",
+    "class": "article--cat"
+  }
+]
