@@ -121,4 +121,8 @@
     padding: 0;
     margin-top: 30px;
   }
+  .footer__text {
+    margin: 5px 0;
+    text-align: left;
+    padding-bottom: 5px;
 }
