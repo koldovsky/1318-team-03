@@ -1,10 +1,106 @@
+img {
+  max-width: 100%;
+}
 
 .footer {
-    padding: 0;
-    margin: 20px 0;
-    justify-content: space-between;
-  }
+  padding: 0;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.footer__container {
+  display: block;
+  justify-content: center;
+  font-family: "Rubik", sans-serif;
+  color: var(--secondary-color);
+  margin: 40px;
+}
+
+
+.footer__column {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+   
+}
+
+.footer__column-title {
+  color: var(--primary-color);
+  padding-top: 30px;
+}
+
+
+.footer__link-item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__links {
+  padding: 0;
   
+}
+.footer__text {
+  margin: 15px 0;
+}
+
+.footer__link {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  color: var(--secondary-color);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.footer__general {
+  display: inline-block;
+}
+
+
+.footer__logo-img {
+  width: 50%;
+  padding-bottom: 20px;
+  margin: 0;
+}
+
+
+.rights {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 40px;
+}
+
+.filled_Qbi {
+  width: 28px;
+  height: 28px;
+  fill: var(--button-hover-color);
+}
+
+.footer__email {
+  border-radius: 15px;
+  border-color: var(--faq-acc-bottom-line-color);
+  padding: 2px 0 2px 10px;
+}
+
+.footer__button {
+  background-color:var(--button-hover-color);
+  color: var(--button-text-color);
+  border-radius: 15px;
+  border-color: var(--button-hover-color);
+  padding: 2px 60px;
+  margin-top: 10px;
+}
+
+.rights {
+  font-family: "Rubik", sans-serif;
+  color: var(--secondary-color);
+}
+
+
+@media (min-width: 768px) {
+  .container {
+      padding: 0 32px;
+  }
   .footer__container {
     display: flex;
     gap: 20px;
@@ -13,59 +109,4 @@
     color: var(--secondary-color);
     margin: 40px;
   }
-  
-  .footer__column {
-    display: inline-block;
-    text-align: left;
-    width: 20%;
-     
-  }
-  
-  .footer__column-title {
-    color: var(--primary-color);
-  }
-  
-  
-  .footer__link-item {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-  }
-  .footer__links {
-    padding: 0;
-    
-  }
-  .footer__text {
-    margin-bottom: 10px;
-  }
-  
-  .footer__link {
-    text-decoration: none;
-    font-family: "Rubik", sans-serif;
-    color: var(--secondary-color);
-    position: relative;
-    display: inline-block;
-    margin-bottom: 10px;
-  }
-  
-  .footer__general {
-    max-width: 240px;
-  }
-  
-  .footer__logo {
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  
-  
-  .rights {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 40px;
-  }
-  
-  .filled_Qbi {
-    width: 28px;
-    height: 28px;
-    fill: var(--button-hover-color);
-  }
+}
