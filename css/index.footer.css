@@ -103,9 +103,7 @@
     color: var(--secondary-color);
     margin: 40px;
   }
-  img {
-    max-width: 100%; 
-  }
+
   .footer__column {
     display: inline-block;
     text-align: left;
@@ -125,4 +123,5 @@
     margin: 5px 0;
     text-align: left;
     padding-bottom: 5px;
+}
 }
