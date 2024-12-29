@@ -1,5 +1,6 @@
 function init() {
   import("./header.js");
+  import("./faq.js");
   import("./articles-list.js");
 }
 
