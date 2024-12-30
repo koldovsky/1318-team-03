@@ -1,0 +1,129 @@
+.team {
+  min-width: 320px;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--background-color);
+  line-height: 1.6;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.team__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.team__title {
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: var(--title-color);
+}
+
+.team__subtitle {
+  font-size: 19px;
+  font-weight: 500;
+  margin-top: 25px;
+  color: var(--secondary-color);
+}
+
+.team__members {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.team__member {
+  flex: 1 1 calc(33.33% - 40px);
+  max-width: calc(33.33% - 40px);
+  text-align: center;
+  padding: 15px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team__member:hover {
+  transform: translateY(-10px);
+  border-radius: var(--border-radius);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.team__photo {
+  max-width: 100%;
+  height: auto;
+}
+
+.team__name {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 20px;
+  color: var(--title-color);
+}
+
+.team__role {
+  color: var(--note-color);
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.team__description {
+  font-size: 17px;
+  font-weight: 400;
+  margin-top: 20px;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 1024px) {
+  .team__title {
+    font-size: 38px;
+  }
+  .team__subtitle {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .team__name {
+    font-size: 23px;
+  }
+  .team__role {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 992px) {
+  .team__member {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .team__title {
+    font-size: 28px;
+  }
+  .team__member {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .team__name {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team__title {
+    font-size: 28px;
+  }
+  .team__subtitle {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  .team__member {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
