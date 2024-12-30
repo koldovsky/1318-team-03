@@ -49,27 +49,30 @@
     /*margin-left: 40px;*/
     text-align: left;
     /*flex-shrink: 0;*/
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   
   .pets-happy-and-healthy__title {
     font-size: 2.5rem ;
     font-weight: bold;
     color: var(--title-color);
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
   
   .pets-happy-and-healthy__description {
     font-size :1.2rem ;
     line-height: 1.6;
     color: var(--primary-color);
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
 
   .pets-happy-and-healthy__details {
     font-size: 1.2rem;
     line-height: 1.6;
     color: var(--text-accent-color);
-    margin-bottom: 20px;
+    /*margin-bottom: 20px;*/
   }
   
   
@@ -112,5 +115,6 @@
 
     .pets-happy-and-healthy__text {
         width: 100%;
+        text-align: center;
     }
 }
