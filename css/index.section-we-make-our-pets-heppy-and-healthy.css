@@ -19,22 +19,23 @@
   
   .pets-happy-and-healthy {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     align-items: center;
-    /*justify-content: center;*/
+    justify-content: space-between;
     padding: 40px;
     background-color: var(--background-color);
+    border-radius: var(--border-radius);
   }
   
   .pets-happy-and-healthy__image {
-    width:40%; /*100%;*/
+    width:45%; 
     max-width: 500px;
-    height: auto;
+    /*height: auto;
     display: block;
-    margin-right: 40px;
+    margin-right: 40px;*/
     overflow: hidden;
     border-radius: var(--border-radius);
-    flex-shrink: 0;
+    /*flex-shrink: 0;*/
   }
   
   .pets-happy-and-healthy__image img {
@@ -44,40 +45,40 @@
   }
   
   .pets-happy-and-healthy__text {
-    max-width: 55% ;/*600px;*/
-    margin-left: 40px;
+    max-width: 50% ;
+    /*margin-left: 40px;*/
     text-align: left;
-    flex-shrink: 0;
+    /*flex-shrink: 0;*/
   }
   
   .pets-happy-and-healthy__title {
-    font-size: 2.2rem ;/*36px;*/
+    font-size: 2.5rem ;
     font-weight: bold;
     color: var(--title-color);
-    margin-bottom: 1rem ;/*20px;*/
+    margin-bottom: 20px;
   }
   
   .pets-happy-and-healthy__description {
-    font-size:1rem ;/*16px;*/
-    line-height: 1.5;
+    font-size :1.2rem ;
+    line-height: 1.6;
     color: var(--primary-color);
-    margin-bottom: 1rem ;/*20px;*/
+    margin-bottom: 20px;
   }
 
   .pets-happy-and-healthy__details {
-    font-size: 1rem;/*16px;*/
-    line-height: 1.5;
+    font-size: 1.2rem;
+    line-height: 1.6;
     color: var(--text-accent-color);
-    margin-bottom: 1rem;/*20px;*/
+    margin-bottom: 20px;
   }
   
   
-  .slider__pets-happy-and-healthy__text {
+  /*.slider__pets-happy-and-healthy__text {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin: 60px 0;
-  }
+  }*/
   
   .btn {
     margin-top: 20px;
@@ -85,45 +86,31 @@
     color: var(--button-text-color);
     border: none;
     border-radius: var(--button-border-radius);
-    padding: 10px 20px;
+    padding: 12px 30px;
     font-size: 1.2rem;
     font-family: Arial, sans-serif;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    text-decoration: none;
   }
   
   .btn:hover {
     background-color: var(--button-hover-color);
   }
 
-  /*@media (max-width: 768px) {
+  @media (max-width: 768px) {
     .pets-happy-and-healthy {
         flex-direction: column; 
-        align-items: stretch;
-    }
-
-    .pets-happy-and-healthy__image {
-        width: 100%; 
-        margin-bottom: 20px;
-    }
-
-    .pets-happy-and-healthy__text {
-        width: 100%; 
-        margin-left: 0;
-        text-align: center; 
-    }
-
-    @media (max-width: 768px) {
-    .pets-happy-and-healthy {
-        flex-direction: column;
+        align-items: center;
         text-align: center;
     }
+
     .pets-happy-and-healthy__image {
         width: 80%;
         margin-bottom: 20px;
     }
+
     .pets-happy-and-healthy__text {
-        width: 90%;
-        margin-left: 0;
+        width: 100%;
     }
-}*/
+}
