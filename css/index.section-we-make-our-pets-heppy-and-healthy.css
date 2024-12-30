@@ -91,7 +91,7 @@
     border-radius: var(--button-border-radius);
     padding: 12px 30px;
     font-size: 1.2rem;
-    font-family: Arial, sans-serif;
+    font-family: "Poppins", sans-serif;
     cursor: pointer;
     transition: background-color 0.3s ease;
     text-decoration: none;
