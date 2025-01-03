@@ -13,11 +13,12 @@
   max-width: 600px;
   border-radius: var(--border-radius);
   overflow: hidden;
+  height: auto; /* Важливо: висота автоматична */
 }
 
 .pets-happy-and-healthy__image img {
   width: 100%;
-  height: 100%; /* Змінено: зображення займає всю висоту контейнера */
+  height: 100%;
   object-fit: cover;
 }
 
@@ -26,35 +27,33 @@
   padding-right: 10%;
   display: flex;
   flex-direction: column;
-  height: 100%; /* Важливо: текстовий блок займає всю висоту батьківського елемента */
+  height: auto; /* Важливо: висота автоматична */
+  min-height: 400px; /* Мінімальна висота для текстового блоку */
+  justify-content: space-around; /* Розподіл простору між елементами */
 }
 
 .pets-happy-and-healthy__content {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  justify-content: center; /* Ось ця зміна! Вирівнювання контенту по центру */
+  gap: 20px; /* Відстань між елементами всередині контенту */
 }
 
 .pets-happy-and-healthy__title {
   font-family: "Rubik", sans-serif;
   font-size: 52px;
   color: var(--title-color);
-  margin-bottom: 10px;
+  margin-bottom: 0; /* Видалено зайвий відступ */
 }
 
-.pets-happy-and-healthy__description {
-  font-size: 18px;
-  color: var(--text-accent-color);
-  font-family: "Poppins",sans-serif;
-}
-
+.pets-happy-and-healthy__description,
 .pets-happy-and-healthy__details {
   font-size: 18px;
-  color: var(--secondary-color);
-  font-family: "Poppins",sans-serif;
-  margin-bottom: 20px;
+  color: var(--text-accent-color);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0; /* Видалено зайвий відступ */
+  line-height: 1.5; /* Для кращої читабельності */
 }
+
 
 .btn {
   text-decoration: none;
@@ -66,34 +65,12 @@
   padding: 13px 20px;
   border-radius: 25px;
   align-self: flex-start;
-  margin-top: 20px; /* Додано відступ зверху */
 }
 
 .btn:hover {
   background-color: var(--button-hover-color);
 }
 
-@media (max-width: 1024px) {
-  .pets-happy-and-healthy {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .pets-happy-and-healthy__image,
-  .pets-happy-and-healthy__text {
-      width: 90%;
-  }
-
-  .pets-happy-and-healthy__text {
-      text-align: center;
-      margin-top: 20px;
-  }
-
-  .btn {
-      margin: 20px auto 0;
-      align-self: center;
-  }
-}
 
 @media (max-width: 640px) {
   .pets-happy-and-healthy__title {
