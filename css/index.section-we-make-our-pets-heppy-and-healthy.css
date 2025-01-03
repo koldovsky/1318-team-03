@@ -10,8 +10,8 @@
 }
 
 .pets-happy-and-healthy__image {
-  width: 70%; 
-  max-width: 800px;
+  width: 100%; 
+  max-width: 1100px;
   border-radius: var(--border-radius);
   overflow: hidden;
 }
