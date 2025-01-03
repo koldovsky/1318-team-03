@@ -1,6 +1,6 @@
 .pets-happy-and-healthy {
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   justify-content: space-between;
   padding: 40px;
   background-color: var(--background-color);
@@ -23,11 +23,10 @@
 
 .pets-happy-and-healthy__text {
   width: 50%;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
   padding-right: 10%;
-  position: relative;
+  display: flex; /* Додаємо flex для коректного розміщення */
+  flex-direction: column; /* Вертикальне розташування елементів */
+  min-height: 250px; /* Важливо: задаємо мінімальну висоту */
 }
 
 .pets-happy-and-healthy__title {
@@ -47,21 +46,20 @@
   font-size: 18px;
   color: var(--secondary-color);
   font-family: "Poppins",sans-serif;
-  margin-bottom: 60px; 
+  margin-bottom: 20px; /* Зменшено відступ */
+  margin-top: auto; /* Притискаємо текст до верху */
 }
 
 .btn {
-  position: absolute; 
-  left: 0;           
-  bottom: 0;         
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 15px;
-  color:var(--button-text-color);
+  color: var(--button-text-color);
   background-color: var(--accent-color);
   padding: 13px 20px;
   border-radius: 25px;
+  align-self: flex-start;
 }
 
 .btn:hover {
@@ -78,16 +76,10 @@
       width: 90%;
       text-align: center;
       margin-top: 20px;
-      position: static; 
-  }
-
-  .pets-happy-and-healthy__details {
-      margin-bottom: 20px; 
   }
 
   .btn {
-      position: static;
-      margin: 20px auto 0; 
+      margin: 20px auto 0;
       align-self: center;
   }
 
