@@ -24,9 +24,14 @@
 .pets-happy-and-healthy__text {
   width: 50%;
   padding-right: 10%;
-  display: flex; /* Додаємо flex для коректного розміщення */
-  flex-direction: column; /* Вертикальне розташування елементів */
-  min-height: 250px; /* Важливо: задаємо мінімальну висоту */
+  display: flex;
+  flex-direction: column;
+}
+
+.pets-happy-and-healthy__content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Важливо: дозволяє контенту займати доступний простір */
 }
 
 .pets-happy-and-healthy__title {
@@ -46,8 +51,7 @@
   font-size: 18px;
   color: var(--secondary-color);
   font-family: "Poppins",sans-serif;
-  margin-bottom: 20px; /* Зменшено відступ */
-  margin-top: auto; /* Притискаємо текст до верху */
+  margin-bottom: 20px;
 }
 
 .btn {
@@ -60,6 +64,7 @@
   padding: 13px 20px;
   border-radius: 25px;
   align-self: flex-start;
+  margin-top: auto; /* Кнопка притискається до низу контейнера */
 }
 
 .btn:hover {
@@ -72,8 +77,12 @@
       align-items: center;
   }
 
+  .pets-happy-and-healthy__image,
   .pets-happy-and-healthy__text {
       width: 90%;
+  }
+
+  .pets-happy-and-healthy__text {
       text-align: center;
       margin-top: 20px;
   }
@@ -82,15 +91,6 @@
       margin: 20px auto 0;
       align-self: center;
   }
-
-  .pets-happy-and-healthy__image {
-      max-width: 90%;
-      text-align: center;
-  }
-
-  .pets-happy-and-healthy__title {
-      font-size: 40px;
-  }
 }
 
 @media (max-width: 640px) {
@@ -98,10 +98,7 @@
       font-size: 32px;
   }
 
-  .pets-happy-and-healthy__description {
-      font-size: 16px;
-  }
-
+  .pets-happy-and-healthy__description,
   .pets-happy-and-healthy__details {
       font-size: 16px;
   }
