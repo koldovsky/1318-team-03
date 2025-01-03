@@ -1,10 +1,11 @@
 .pets-happy-and-healthy {
   display: flex;
   align-items: flex-start; 
-  gap: 20px;
+  justify-content: space-between;
   padding: 40px;
   background-color: var(--background-color);
   border-radius: var(--border-radius);
+  gap: 20px;
 }
 
 .pets-happy-and-healthy__image {
@@ -22,13 +23,11 @@
 
 .pets-happy-and-healthy__text {
   width: 50%;
-  padding-right: 10%;
-}
-
-.pets-happy-and-healthy__content { 
+  text-align: left;
   display: flex;
   flex-direction: column;
-  height: 100%; 
+  padding-right: 10%;
+  position: relative;
 }
 
 .pets-happy-and-healthy__title {
@@ -41,17 +40,20 @@
 .pets-happy-and-healthy__description {
   font-size: 18px;
   color: var(--text-accent-color);
-  font-family: "Poppins", sans-serif;
+  font-family: "Poppins",sans-serif;
 }
 
 .pets-happy-and-healthy__details {
   font-size: 18px;
   color: var(--secondary-color);
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 20px; 
+  font-family: "Poppins",sans-serif;
+  margin-bottom: 60px; 
 }
 
 .btn {
+  position: absolute; 
+  left: 0;           
+  bottom: 0;         
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -60,8 +62,6 @@
   background-color: var(--accent-color);
   padding: 13px 20px;
   border-radius: 25px;
-  align-self: flex-start; 
-  margin-top: auto; 
 }
 
 .btn:hover {
@@ -74,21 +74,30 @@
       align-items: center;
   }
 
-  .pets-happy-and-healthy__image{
-    width: 90%;
-  }
   .pets-happy-and-healthy__text {
       width: 90%;
-  }
-
-  .pets-happy-and-healthy__text {
       text-align: center;
       margin-top: 20px;
+      position: static; 
+  }
+
+  .pets-happy-and-healthy__details {
+      margin-bottom: 20px; 
   }
 
   .btn {
-      margin: 20px auto 0;
+      position: static;
+      margin: 20px auto 0; 
       align-self: center;
+  }
+
+  .pets-happy-and-healthy__image {
+      max-width: 90%;
+      text-align: center;
+  }
+
+  .pets-happy-and-healthy__title {
+      font-size: 40px;
   }
 }
 
@@ -97,9 +106,10 @@
       font-size: 32px;
   }
 
-  .pets-happy-and-healthy__description{
-    font-size: 16px;
+  .pets-happy-and-healthy__description {
+      font-size: 16px;
   }
+
   .pets-happy-and-healthy__details {
       font-size: 16px;
   }
