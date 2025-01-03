@@ -41,12 +41,14 @@
 
 .pets-happy-and-healthy__description {
   font-size: 18px;
-  color: var(--primary-color);
+  color: var(--text-accent-color);
+  font-family: "Poppins",sans-serif;
 }
 
 .pets-happy-and-healthy__details {
   font-size: 18px; 
-  color: var(--primary-color);
+  color: var(--secondary-color);
+  font-family: "Poppins",sans-serif;
 }
 
 .btn {
