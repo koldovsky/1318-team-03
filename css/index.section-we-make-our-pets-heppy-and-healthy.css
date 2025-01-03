@@ -13,7 +13,7 @@
   max-width: 600px;
   border-radius: var(--border-radius);
   overflow: hidden;
-  height: auto; /* Важливо: висота автоматична */
+  height: auto; 
 }
 
 .pets-happy-and-healthy__image img {
@@ -27,31 +27,37 @@
   padding-right: 10%;
   display: flex;
   flex-direction: column;
-  height: auto; /* Важливо: висота автоматична */
-  min-height: 400px; /* Мінімальна висота для текстового блоку */
-  justify-content: space-around; /* Розподіл простору між елементами */
+  height: auto; 
+  min-height: 400px; 
+  justify-content: space-around; 
 }
 
 .pets-happy-and-healthy__content {
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Відстань між елементами всередині контенту */
+  gap: 20px; 
 }
 
 .pets-happy-and-healthy__title {
   font-family: "Rubik", sans-serif;
   font-size: 52px;
   color: var(--title-color);
-  margin-bottom: 0; /* Видалено зайвий відступ */
+  margin-bottom: 0; 
 }
 
-.pets-happy-and-healthy__description,
+.pets-happy-and-healthy__description{
+  font-size: 18px;
+  color: var(--text-accent-color);
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0; 
+  line-height: 1.5; 
+}
 .pets-happy-and-healthy__details {
   font-size: 18px;
   color: var(--text-accent-color);
   font-family: "Poppins", sans-serif;
-  margin-bottom: 0; /* Видалено зайвий відступ */
-  line-height: 1.5; /* Для кращої читабельності */
+  margin-bottom: 0; 
+  line-height: 1.5; 
 }
 
 
@@ -74,14 +80,56 @@
   background-color: var(--text-accent-color);
 }
 
+@media (max-width: 768px) { 
+  .pets-happy-and-healthy {
+      flex-direction: column; 
+      align-items: center;    
+      padding: 20px;        
+      gap: 30px;
+  }
 
-@media (max-width: 640px) {
+  .pets-happy-and-healthy__image {
+      width: 90%;         
+      max-width: 400px;      
+  }
+
+  .pets-happy-and-healthy__text {
+      width: 90%;            
+      padding-right: 0;    
+      text-align: center;   
+      min-height: auto;      
+      justify-content: flex-start; 
+  }
+  .pets-happy-and-healthy__content{
+      gap: 10px;
+  }
+
   .pets-happy-and-healthy__title {
-      font-size: 32px;
+      font-size: 36px;      
   }
 
   .pets-happy-and-healthy__description,
   .pets-happy-and-healthy__details {
-      font-size: 16px;
+      font-size: 16px;      
+      line-height: 1.3;
+  }
+
+  .btn {
+      margin: 20px auto 0; 
+      align-self: center;
+      width: 80%;
+  }
+}
+
+@media (max-width: 480px) { 
+  .pets-happy-and-healthy__title {
+      font-size: 28px;      
+  }
+
+  .pets-happy-and-healthy__description{
+    font-size: 14px; 
+  }
+  .pets-happy-and-healthy__details {
+      font-size: 14px;      
   }
 }
