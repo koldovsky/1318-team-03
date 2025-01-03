@@ -1,15 +1,14 @@
 .pets-happy-and-healthy {
   display: flex;
-  align-items: center;
-  justify-content: space-between; /* Залишаємо для великих екранів */
+  align-items: flex-start; 
+  gap: 20px;
   padding: 40px;
   background-color: var(--background-color);
   border-radius: var(--border-radius);
-  gap: 20px;
 }
 
 .pets-happy-and-healthy__image {
-  width: 45%; /* Або інше значення, яке вам підходить */
+  width: 45%;
   max-width: 600px;
   border-radius: var(--border-radius);
   overflow: hidden;
@@ -22,13 +21,14 @@
 }
 
 .pets-happy-and-healthy__text {
-  width: 50%; /* Або інше значення */
-  text-align: left;
+  width: 50%;
+  padding-right: 10%;
+}
+
+.pets-happy-and-healthy__content { 
   display: flex;
   flex-direction: column;
-  /* Важливо: прибираємо justify-content звідси взагалі */
-  gap: 20px;
-  padding-right: 10%;
+  height: 100%; 
 }
 
 .pets-happy-and-healthy__title {
@@ -41,26 +41,27 @@
 .pets-happy-and-healthy__description {
   font-size: 18px;
   color: var(--text-accent-color);
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .pets-happy-and-healthy__details {
   font-size: 18px;
   color: var(--secondary-color);
-  font-family: "Poppins",sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 20px; 
 }
 
 .btn {
-  align-self: flex-start;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 15px;
-  color: #fff;
+  color:var(--button-text-color);
   background-color: var(--accent-color);
   padding: 13px 20px;
   border-radius: 25px;
-  margin-top: auto; /* Ось де магія! */
+  align-self: flex-start; 
+  margin-top: auto; 
 }
 
 .btn:hover {
@@ -73,27 +74,21 @@
       align-items: center;
   }
 
+  .pets-happy-and-healthy__image{
+    width: 90%;
+  }
   .pets-happy-and-healthy__text {
       width: 90%;
+  }
+
+  .pets-happy-and-healthy__text {
       text-align: center;
       margin-top: 20px;
-      display: flex;
-      flex-direction: column;
-      /*justify-content: flex-start; - зайве, бо margin-top: auto все робить*/
   }
 
   .btn {
       margin: 20px auto 0;
       align-self: center;
-  }
-
-  .pets-happy-and-healthy__image {
-      max-width: 90%;
-      text-align: center;
-  }
-
-  .pets-happy-and-healthy__title {
-      font-size: 40px;
   }
 }
 
@@ -102,10 +97,9 @@
       font-size: 32px;
   }
 
-  .pets-happy-and-healthy__description {
-      font-size: 16px;
+  .pets-happy-and-healthy__description{
+    font-size: 16px;
   }
-
   .pets-happy-and-healthy__details {
       font-size: 16px;
   }
