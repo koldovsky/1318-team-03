@@ -1,7 +1,7 @@
 .pets-happy-and-healthy {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; /* Залишаємо для великих екранів */
   padding: 40px;
   background-color: var(--background-color);
   border-radius: var(--border-radius);
@@ -9,8 +9,8 @@
 }
 
 .pets-happy-and-healthy__image {
-  width: 45%; 
-  max-width: 600px; 
+  width: 45%; /* Або інше значення, яке вам підходить */
+  max-width: 600px;
   border-radius: var(--border-radius);
   overflow: hidden;
 }
@@ -22,14 +22,13 @@
 }
 
 .pets-happy-and-healthy__text {
-  width: 50%; 
+  width: 50%; /* Або інше значення */
   text-align: left;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
+  /* Важливо: прибираємо justify-content звідси взагалі */
   gap: 20px;
   padding-right: 10%;
-  min-height: 300px; 
 }
 
 .pets-happy-and-healthy__title {
@@ -61,7 +60,7 @@
   background-color: var(--accent-color);
   padding: 13px 20px;
   border-radius: 25px;
-  
+  margin-top: auto; /* Ось де магія! */
 }
 
 .btn:hover {
@@ -75,13 +74,12 @@
   }
 
   .pets-happy-and-healthy__text {
-      width: 90%; 
+      width: 90%;
       text-align: center;
       margin-top: 20px;
       display: flex;
       flex-direction: column;
-      justify-content: flex-start; 
-      min-height: auto; 
+      /*justify-content: flex-start; - зайве, бо margin-top: auto все робить*/
   }
 
   .btn {
@@ -90,7 +88,7 @@
   }
 
   .pets-happy-and-healthy__image {
-      max-width: 90%; 
+      max-width: 90%;
       text-align: center;
   }
 
