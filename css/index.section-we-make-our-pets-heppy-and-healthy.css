@@ -30,6 +30,7 @@
   justify-content: space-between; 
   gap: 20px;
   padding-right: 10%; 
+  height: 100%;
 }
 
 .pets-happy-and-healthy__title {
@@ -61,7 +62,7 @@
   background-color: var(--accent-color);
   padding: 13px 20px;
   border-radius: 25px;
-  margin-top: 20px; 
+  margin-top: auto; 
 }
 
 .btn:hover {
