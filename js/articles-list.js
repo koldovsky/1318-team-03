@@ -35,7 +35,7 @@ fetch("data/articles.json")
       button.addEventListener("click", (event) => {
         const article = event.target.closest(".article");
         if (article) {
-          // Check if article is found
+          
           const title = article.querySelector(".article__title").textContent;
           const meta = article.querySelector(".article__meta").textContent;
           const text = article.querySelector(".article__text").textContent;
@@ -58,4 +58,9 @@ fetch("data/articles.json")
     if (articlesList) {
       articlesList.innerHTML = "<p>Error loading articles.</p>";
     }
+  });
+
+  document.querySelectorAll(".article__image").forEach((image) => {
+    image.addEventListener("click", () => {
+    });
   });
