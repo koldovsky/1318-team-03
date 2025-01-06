@@ -1,27 +1,87 @@
 @import "global.css";
 @import "services.title.css";
+@import "index.header.css";
+@import "index.footer.css";
+
+.service{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--service-background-color);
+    padding: 0px;
+    margin: 20px;
+}
+
+@media (min-width: 770px) {
+    .service{
+        flex-direction: row;
+        margin: 40px;
+    }
+}
+
+.service__text{
+    margin: 10px 0px;
+}
+
+.service__image-element{
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center;
+}
+
+.service__info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 43px 39px;
+}
 
 .service__price{
     color: var(--accent-color);
     font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
 }
 
 .service__name{
     color: var(--title-color);
     font-family: "Rubik", sans-serif;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .service__description{
     color: var(--secondary-color);
     font-family: "Poppins", sans-serif;
+    font-size: 17px;
+}
+
+.service__features-item{
+    display: flex;
+    flex-direction: row;
 }
 
 .service__feature-text{
     color: var(--text-accent-color);
     font-family: "Poppins", sans-serif;
+    font-size: 17px;
 }
 
 .service__button{
+    width: 142px;
+    height: 48px;
+    display: inline-block;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-color: var(--button-active-color);
     color: var(--button-text-color);
     font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: var(--button-border-radius);
+    border: 1px solid var(--button-border-color);
+    margin: 10px;
 }
+

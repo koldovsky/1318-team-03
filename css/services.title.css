@@ -1,9 +1,16 @@
+.title{
+    text-align: center;
+}
+
 .title__main-text {
     color: var(--title-color);
     font-family: "Rubik", sans-serif;
+    font-size: 38px;
+    margin: 10px
 }
-
 .title__description {
     color: var(--text-accent-color);
     font-family: "Poppins", sans-serif;
+    font-size: 19px;
+    margin: 10px;
 }
