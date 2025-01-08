@@ -16,7 +16,13 @@
         flex-direction: row;
         margin: 40px;
     }
+
+    .even{
+        flex-direction: row-reverse;
+    }
 }
+
+
 
 .service__text{
     margin: 10px 0px;
