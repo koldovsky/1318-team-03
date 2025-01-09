@@ -1,0 +1,44 @@
+.phone-banner{
+    margin: 0 0 50px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--service-background-color);
+}
+
+.phone-banner__text{
+    padding: 10px 0;
+}
+
+.phone-banner__info{
+    display: flex;
+    flex-direction: row;
+}
+
+.phone-banner__title{
+    flex: 1;
+    font-family: "Rubik", sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+.phone-banner__main-text{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    color: var(--title-color);
+}
+
+.phone-banner__phone{
+    text-decoration: underline;
+    font-family: "Poppins", sans-serif;
+    color: var(--accent-color);
+    font-size: 14px;
+}
+
+@media (min-width: 770px) {
+    .phone-banner{
+        flex-direction: row;
+    }
+}
