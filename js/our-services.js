@@ -1,4 +1,4 @@
-        document.addEventListener("DOMContentLoaded", function () {
+
             const servicesOptions = document.querySelector(".services__options");
             const leftButton = document.querySelector(".services__buttons[aria-label='Scroll left']");
             const rightButton = document.querySelector(".services__buttons[aria-label='Scroll right']");
@@ -51,4 +51,3 @@
             updateCarousel();
 
             window.addEventListener("resize", updateCarousel);
-        });
