@@ -1,18 +1,60 @@
- .slider__best-care {
+.best-care__slider {
+  height: 446px;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 60px 0px;
-  
+  padding-top: 50px;
 }
 
-.best-care__card {
-  height: 320px;
-  width: 260px;
+.slider__best-care {
+  position: relative;
+  width: 50%;
+  overflow: hidden;
+  left: 25%;
+}
+
+.best-care__card__inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  justify-content: center;
+}
+
+.best-care__card__background {
+  margin: 15px;
   background-color: var(--button-text-color);
   border-radius: 20px;
-  overflow: hidden;
-  margin: 15px;
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .slider__best-care .best-care__card {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slider__best-care .best-care__card {
+    flex: 0 0 33.33%;
+  }
+}
+
+.best-care__btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.best-care__btn__prev__container {
+  padding-top: 12rem;
+  padding-left: 23%;
+  position: absolute;
+  width: 20px;
+  z-index: 20;
+}
+
+.best-care__btn__next__container {
+  position: absolute;
+  padding-left: 76%;
+  width: 20px;
+  padding-top: 12rem;
 }
 
 .best-care__img {
@@ -21,15 +63,15 @@
 }
 
 .slider-card__title {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   color: var(--title-color);
   padding: 20px 0px;
 }
 
 .best-care__hr {
-	border: none;
+  border: none;
   width: 40px;
-	border-top: 2px solid var(--accent-color);
+  border-top: 2px solid var(--accent-color);
 }
 
 .slider-card__info {
@@ -38,21 +80,21 @@
 }
 
 .slider-card__discription {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 17px;
   color: var(--secondary-color);
 }
 
 .slider-card__link {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 17px;
-  padding-top: 32px;
+  padding-top: 25px;
 }
 
 .slider-card__link a {
   color: var(--title-color);
   text-decoration: none;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 11px;
   font-weight: 700;
 }
@@ -61,12 +103,4 @@
   position: relative;
   top: 8px;
   left: 5px;
-}
-
-.slider__best-care button {
-  border: none;
-  text-decoration: none;
-  background-color: none;
-  height: 30px;
-  align-self: center;
 }

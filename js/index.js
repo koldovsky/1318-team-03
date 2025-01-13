@@ -3,6 +3,7 @@ function init() {
   import("./faq.js");
   import("./our-services.js");
   import("./articles-list.js");
+  import("./slider-best-care.js");
 }
 
 const totalPartials = document.querySelectorAll(
